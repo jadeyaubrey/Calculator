@@ -12,6 +12,9 @@ namespace Calculator_Final
 {
     public partial class frmCalculator : Form
     {
+        double solver = 0;
+        // solver will be the on to collect the numbers and then solve the equations later on 
+
         public frmCalculator()
         {
             InitializeComponent();
@@ -80,7 +83,10 @@ namespace Calculator_Final
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
-           
+            solver = double.Parse(txtDisp2.Text + txtDisp1.Text);
+            MessageBox.Show(solver.ToString()) ;
+
+            
         }
     }
 }
