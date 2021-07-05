@@ -66,9 +66,6 @@ namespace Calculator_Final
             // 
             // btnNeg
             // 
-            this.btnNeg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNeg.BackColor = System.Drawing.Color.White;
             this.btnNeg.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnNeg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -82,9 +79,6 @@ namespace Calculator_Final
             // 
             // btn0
             // 
-            this.btn0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn0.BackColor = System.Drawing.Color.White;
             this.btn0.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -99,9 +93,6 @@ namespace Calculator_Final
             // 
             // btnDecimal
             // 
-            this.btnDecimal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDecimal.BackColor = System.Drawing.Color.White;
             this.btnDecimal.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnDecimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -116,9 +107,6 @@ namespace Calculator_Final
             // 
             // btnEquals
             // 
-            this.btnEquals.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEquals.BackColor = System.Drawing.Color.LightBlue;
             this.btnEquals.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue;
             this.btnEquals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -132,9 +120,6 @@ namespace Calculator_Final
             // 
             // btn3
             // 
-            this.btn3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn3.BackColor = System.Drawing.Color.White;
             this.btn3.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -149,9 +134,6 @@ namespace Calculator_Final
             // 
             // btnAdd
             // 
-            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -166,9 +148,6 @@ namespace Calculator_Final
             // 
             // btn2
             // 
-            this.btn2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn2.BackColor = System.Drawing.Color.White;
             this.btn2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -183,9 +162,6 @@ namespace Calculator_Final
             // 
             // btn1
             // 
-            this.btn1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn1.BackColor = System.Drawing.Color.White;
             this.btn1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -200,9 +176,6 @@ namespace Calculator_Final
             // 
             // btn9
             // 
-            this.btn9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn9.BackColor = System.Drawing.Color.White;
             this.btn9.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -217,9 +190,6 @@ namespace Calculator_Final
             // 
             // btnMultiply
             // 
-            this.btnMultiply.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMultiply.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnMultiply.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnMultiply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -233,9 +203,6 @@ namespace Calculator_Final
             // 
             // btn8
             // 
-            this.btn8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn8.BackColor = System.Drawing.Color.White;
             this.btn8.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -250,9 +217,6 @@ namespace Calculator_Final
             // 
             // btn7
             // 
-            this.btn7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn7.BackColor = System.Drawing.Color.White;
             this.btn7.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -267,9 +231,6 @@ namespace Calculator_Final
             // 
             // btn6
             // 
-            this.btn6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn6.BackColor = System.Drawing.Color.White;
             this.btn6.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -284,9 +245,6 @@ namespace Calculator_Final
             // 
             // btnSubtract
             // 
-            this.btnSubtract.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSubtract.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnSubtract.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnSubtract.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -300,9 +258,6 @@ namespace Calculator_Final
             // 
             // btn5
             // 
-            this.btn5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn5.BackColor = System.Drawing.Color.White;
             this.btn5.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -317,9 +272,6 @@ namespace Calculator_Final
             // 
             // btn4
             // 
-            this.btn4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn4.BackColor = System.Drawing.Color.White;
             this.btn4.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -334,9 +286,6 @@ namespace Calculator_Final
             // 
             // btnSQRT
             // 
-            this.btnSQRT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSQRT.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnSQRT.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnSQRT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -350,9 +299,6 @@ namespace Calculator_Final
             // 
             // btnDivision
             // 
-            this.btnDivision.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDivision.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnDivision.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnDivision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -366,9 +312,6 @@ namespace Calculator_Final
             // 
             // btnSquare
             // 
-            this.btnSquare.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSquare.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnSquare.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnSquare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -382,9 +325,6 @@ namespace Calculator_Final
             // 
             // btn1overX
             // 
-            this.btn1overX.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn1overX.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btn1overX.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btn1overX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -398,9 +338,6 @@ namespace Calculator_Final
             // 
             // btnC
             // 
-            this.btnC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnC.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnC.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -414,9 +351,6 @@ namespace Calculator_Final
             // 
             // btnDel
             // 
-            this.btnDel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnDel.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -429,9 +363,6 @@ namespace Calculator_Final
             // 
             // btnCE
             // 
-            this.btnCE.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCE.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnCE.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnCE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -445,9 +376,6 @@ namespace Calculator_Final
             // 
             // btnPerc
             // 
-            this.btnPerc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPerc.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnPerc.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnPerc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -461,39 +389,29 @@ namespace Calculator_Final
             // 
             // txtDisp1
             // 
-            this.txtDisp1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDisp1.BackColor = System.Drawing.Color.LightGray;
             this.txtDisp1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDisp1.Font = new System.Drawing.Font("Segoe UI Semibold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtDisp1.Font = new System.Drawing.Font("Segoe UI Semibold", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtDisp1.Location = new System.Drawing.Point(6, 91);
-            this.txtDisp1.Multiline = true;
             this.txtDisp1.Name = "txtDisp1";
-            this.txtDisp1.Size = new System.Drawing.Size(385, 91);
+            this.txtDisp1.Size = new System.Drawing.Size(385, 80);
             this.txtDisp1.TabIndex = 24;
             this.txtDisp1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtDisp2
             // 
-            this.txtDisp2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDisp2.BackColor = System.Drawing.Color.LightGray;
-            this.txtDisp2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDisp2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(236)))), ((int)(((byte)(232)))));
+            this.txtDisp2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDisp2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtDisp2.Location = new System.Drawing.Point(6, 44);
-            this.txtDisp2.Multiline = true;
+            this.txtDisp2.ForeColor = System.Drawing.Color.DimGray;
+            this.txtDisp2.Location = new System.Drawing.Point(6, 53);
             this.txtDisp2.Name = "txtDisp2";
-            this.txtDisp2.Size = new System.Drawing.Size(385, 41);
+            this.txtDisp2.Size = new System.Drawing.Size(385, 34);
             this.txtDisp2.TabIndex = 25;
             this.txtDisp2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblStandard
             // 
-            this.lblStandard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStandard.AutoSize = true;
             this.lblStandard.BackColor = System.Drawing.Color.Transparent;
             this.lblStandard.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -505,9 +423,6 @@ namespace Calculator_Final
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(12, 0);
@@ -518,9 +433,9 @@ namespace Calculator_Final
             // 
             // btnMC
             // 
-            this.btnMC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMC.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(236)))), ((int)(((byte)(232)))));
+            this.btnMC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMC.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMC.Location = new System.Drawing.Point(6, 188);
             this.btnMC.Name = "btnMC";
             this.btnMC.Size = new System.Drawing.Size(66, 37);
@@ -530,10 +445,10 @@ namespace Calculator_Final
             // 
             // btnMR
             // 
-            this.btnMR.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMR.Location = new System.Drawing.Point(78, 188);
+            this.btnMR.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(236)))), ((int)(((byte)(232)))));
+            this.btnMR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMR.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMR.Location = new System.Drawing.Point(75, 188);
             this.btnMR.Name = "btnMR";
             this.btnMR.Size = new System.Drawing.Size(68, 37);
             this.btnMR.TabIndex = 32;
@@ -542,9 +457,9 @@ namespace Calculator_Final
             // 
             // btnMMinus
             // 
-            this.btnMMinus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMMinus.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(236)))), ((int)(((byte)(232)))));
+            this.btnMMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMMinus.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMMinus.Location = new System.Drawing.Point(229, 188);
             this.btnMMinus.Name = "btnMMinus";
             this.btnMMinus.Size = new System.Drawing.Size(70, 37);
@@ -554,10 +469,10 @@ namespace Calculator_Final
             // 
             // btnMPlus
             // 
-            this.btnMPlus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMPlus.Location = new System.Drawing.Point(152, 188);
+            this.btnMPlus.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(236)))), ((int)(((byte)(232)))));
+            this.btnMPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMPlus.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMPlus.Location = new System.Drawing.Point(151, 188);
             this.btnMPlus.Name = "btnMPlus";
             this.btnMPlus.Size = new System.Drawing.Size(68, 37);
             this.btnMPlus.TabIndex = 33;
@@ -566,9 +481,9 @@ namespace Calculator_Final
             // 
             // btnMS
             // 
-            this.btnMS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMS.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(236)))), ((int)(((byte)(232)))));
+            this.btnMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMS.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMS.Location = new System.Drawing.Point(305, 188);
             this.btnMS.Name = "btnMS";
             this.btnMS.Size = new System.Drawing.Size(61, 37);

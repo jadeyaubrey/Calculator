@@ -12,7 +12,7 @@ namespace Calculator_Final
 {
     public partial class frmCalculator : Form
     {
-        double solver = 0;
+        Boolean operation = false;
         // solver will be the on to collect the numbers and then solve the equations later on 
 
         public frmCalculator()
@@ -22,42 +22,90 @@ namespace Calculator_Final
 
         private void btn1_Click(object sender, EventArgs e)
         {
+            if (operation)
+            {
+                txtDisp1.Text = "";
+            }
+
             txtDisp1.Text = txtDisp1.Text + "1";
+            operation = false;
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
+            if (operation)
+            {
+                txtDisp1.Text = "";
+            }
+
             txtDisp1.Text = txtDisp1.Text + "2";
+            operation = false; 
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
+            if (operation)
+            {
+                txtDisp1.Text = "";
+            }
+
             txtDisp1.Text = txtDisp1.Text + "3";
+            operation = false;
         }
 
         private void btn0_Click(object sender, EventArgs e)
         {
+            if (operation)
+            {
+                txtDisp1.Text = "";
+            }
+
             txtDisp1.Text = txtDisp1.Text + "0";
+            operation = false;
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
+            if (operation)
+            {
+                txtDisp1.Text = "";
+            }
+
             txtDisp1.Text = txtDisp1.Text + "4";
+            operation = false;
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
+            if (operation)
+            {
+                txtDisp1.Text = "";
+            }
+
             txtDisp1.Text = txtDisp1.Text + "5";
+            operation = false;
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
+            if (operation)
+            {
+                txtDisp1.Text = "";
+            }
+
             txtDisp1.Text = txtDisp1.Text + "6";
+            operation = false;
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
+            if (operation)
+            {
+                txtDisp1.Text = "";
+            }
+
             txtDisp1.Text = txtDisp1.Text + "7";
+            operation = false;
         }
 
         private void btn8_Click(object sender, EventArgs e)
@@ -67,7 +115,13 @@ namespace Calculator_Final
 
         private void btn9_Click(object sender, EventArgs e)
         {
+            if (operation)
+            {
+                txtDisp1.Text = "";
+            }
+
             txtDisp1.Text = txtDisp1.Text + "9";
+            operation = false;
         }
 
         private void btnDecimal_Click(object sender, EventArgs e)
@@ -77,8 +131,8 @@ namespace Calculator_Final
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            operation = true;
             txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "+";
-            txtDisp1.Clear();
         }
 
     }
