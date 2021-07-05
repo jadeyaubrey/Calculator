@@ -461,6 +461,9 @@ namespace Calculator_Final
             // 
             // txtDisp1
             // 
+            this.txtDisp1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDisp1.BackColor = System.Drawing.Color.LightGray;
             this.txtDisp1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDisp1.Font = new System.Drawing.Font("Segoe UI Semibold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -473,6 +476,9 @@ namespace Calculator_Final
             // 
             // txtDisp2
             // 
+            this.txtDisp2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDisp2.BackColor = System.Drawing.Color.LightGray;
             this.txtDisp2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDisp2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -485,6 +491,9 @@ namespace Calculator_Final
             // 
             // lblStandard
             // 
+            this.lblStandard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStandard.AutoSize = true;
             this.lblStandard.BackColor = System.Drawing.Color.Transparent;
             this.lblStandard.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -496,6 +505,9 @@ namespace Calculator_Final
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(12, 0);
@@ -603,6 +615,8 @@ namespace Calculator_Final
             this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btnNeg);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frmCalculator";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
