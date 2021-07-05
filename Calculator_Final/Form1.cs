@@ -81,12 +81,5 @@ namespace Calculator_Final
             txtDisp1.Clear();
         }
 
-        private void btnEquals_Click(object sender, EventArgs e)
-        {
-            solver = double.Parse(txtDisp2.Text + txtDisp1.Text);
-            MessageBox.Show(solver.ToString()) ;
-
-            
-        }
     }
 }

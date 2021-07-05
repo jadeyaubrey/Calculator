@@ -112,7 +112,6 @@ namespace Calculator_Final
             this.btnEquals.TabIndex = 2;
             this.btnEquals.Text = "=";
             this.btnEquals.UseVisualStyleBackColor = false;
-            this.btnEquals.Click += new System.EventHandler(this.btnEquals_Click);
             // 
             // btn3
             // 
@@ -388,7 +387,7 @@ namespace Calculator_Final
             this.txtDisp1.BackColor = System.Drawing.Color.LightGray;
             this.txtDisp1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDisp1.Font = new System.Drawing.Font("Segoe UI Semibold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtDisp1.Location = new System.Drawing.Point(15, 125);
+            this.txtDisp1.Location = new System.Drawing.Point(15, 112);
             this.txtDisp1.Multiline = true;
             this.txtDisp1.Name = "txtDisp1";
             this.txtDisp1.Size = new System.Drawing.Size(379, 55);
