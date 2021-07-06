@@ -33,12 +33,19 @@ namespace Calculator_Final
             {
                 txtDisp1.Text = "1";
             }
+            else if (equals)
+            {
+                txtDisp2.Clear();
+                txtDisp1.Text = "";
+                txtDisp1.Text = "1";
+            }
             else
             {
                 txtDisp1.Text = txtDisp1.Text + "1";
             }
 
             operation = false;
+            equals = false;
         }
 
         private void btn2_Click(object sender, EventArgs e)
@@ -52,11 +59,18 @@ namespace Calculator_Final
             {
                 txtDisp1.Text = "2";
             }
+            else if (equals)
+            {
+                txtDisp2.Clear();
+                txtDisp1.Text = "";
+                txtDisp1.Text = "2";
+            }
             else
             {
                 txtDisp1.Text = txtDisp1.Text + "2";
             }
-            operation = false; 
+            operation = false;
+            equals = false;
         }
 
         private void btn3_Click(object sender, EventArgs e)
@@ -70,12 +84,18 @@ namespace Calculator_Final
             {
                 txtDisp1.Text = "3";
             }
+            else if (equals)
+            {
+                txtDisp2.Clear();
+                txtDisp1.Text = "";
+                txtDisp1.Text = "3";
+            }
             else
             {
                 txtDisp1.Text = txtDisp1.Text + "3";
             }
-
             operation = false;
+            equals = false;
         }
 
         private void btn0_Click(object sender, EventArgs e)
@@ -89,11 +109,18 @@ namespace Calculator_Final
             {
                 txtDisp1.Text = "0";
             }
+            else if (equals)
+            {
+                txtDisp2.Clear();
+                txtDisp1.Text = "";
+                txtDisp1.Text = "0";
+            }
             else
             {
                 txtDisp1.Text = txtDisp1.Text + "0";
             }
             operation = false;
+            equals = false;
         }
 
         private void btn4_Click(object sender, EventArgs e)
@@ -107,12 +134,18 @@ namespace Calculator_Final
             {
                 txtDisp1.Text = "4";
             }
+            else if (equals)
+            {
+                txtDisp2.Clear();
+                txtDisp1.Text = "";
+                txtDisp1.Text = "4";
+            }
             else
             {
                 txtDisp1.Text = txtDisp1.Text + "4";
             }
-
             operation = false;
+            equals = false;
         }
 
         private void btn5_Click(object sender, EventArgs e)
@@ -126,13 +159,18 @@ namespace Calculator_Final
             {
                 txtDisp1.Text = "5";
             }
+            else if (equals)
+            {
+                txtDisp2.Clear();
+                txtDisp1.Text = "";
+                txtDisp1.Text = "5";
+            }
             else
             {
                 txtDisp1.Text = txtDisp1.Text + "5";
             }
-
-            txtDisp1.Text = txtDisp1.Text + "5";
             operation = false;
+            equals = false;
         }
 
         private void btn6_Click(object sender, EventArgs e)
@@ -146,11 +184,18 @@ namespace Calculator_Final
             {
                 txtDisp1.Text = "6";
             }
+            else if (equals)
+            {
+                txtDisp2.Clear();
+                txtDisp1.Text = "";
+                txtDisp1.Text = "6";
+            }
             else
             {
                 txtDisp1.Text = txtDisp1.Text + "6";
             }
             operation = false;
+            equals = false;
         }
 
         private void btn7_Click(object sender, EventArgs e)
@@ -164,11 +209,18 @@ namespace Calculator_Final
             {
                 txtDisp1.Text = "7";
             }
+            else if (equals)
+            {
+                txtDisp2.Clear();
+                txtDisp1.Text = "";
+                txtDisp1.Text = "7";
+            }
             else
             {
                 txtDisp1.Text = txtDisp1.Text + "7";
             }
             operation = false;
+            equals = false;
         }
 
         private void btn8_Click(object sender, EventArgs e)
@@ -182,11 +234,18 @@ namespace Calculator_Final
             {
                 txtDisp1.Text = "8";
             }
+            else if (equals)
+            {
+                txtDisp2.Clear();
+                txtDisp1.Text = "";
+                txtDisp1.Text = "8";
+            }
             else
             {
                 txtDisp1.Text = txtDisp1.Text + "8";
             }
             operation = false;
+            equals = false;
         }
 
         private void btn9_Click(object sender, EventArgs e)
@@ -200,11 +259,18 @@ namespace Calculator_Final
             {
                 txtDisp1.Text = "9";
             }
+            else if (equals)
+            {
+                txtDisp2.Clear();
+                txtDisp1.Text = "";
+                txtDisp1.Text = "9";
+            }
             else
             {
                 txtDisp1.Text = txtDisp1.Text + "9";
             }
             operation = false;
+            equals = false;
         }
 
         private void btnDecimal_Click(object sender, EventArgs e)
@@ -238,7 +304,6 @@ namespace Calculator_Final
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
-            operation = true;
             equals = true;
 
             txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
