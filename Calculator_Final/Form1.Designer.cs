@@ -29,6 +29,7 @@ namespace Calculator_Final
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCalculator));
             this.btnNeg = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
             this.btnDecimal = new System.Windows.Forms.Button();
@@ -532,6 +533,7 @@ namespace Calculator_Final
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btnNeg);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmCalculator";
             this.Opacity = 0.9D;
