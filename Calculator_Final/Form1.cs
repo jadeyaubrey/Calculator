@@ -27,8 +27,15 @@ namespace Calculator_Final
             {
                 txtDisp1.Text = "";
             }
+            else if (txtDisp1.Text == "0" && txtDisp1.Text != null)
+            {
+                txtDisp1.Text = "1";
+            }
+            else
+            {
+                txtDisp1.Text = txtDisp1.Text + "1";
+            }
 
-            txtDisp1.Text = txtDisp1.Text + "1";
             operation = false;
         }
 
@@ -130,6 +137,7 @@ namespace Calculator_Final
             txtDisp1.Text = txtDisp1.Text + ".";
         }
 
+        //operations
         private void btnAdd_Click(object sender, EventArgs e)
         {
             operation = true;
@@ -138,12 +146,42 @@ namespace Calculator_Final
             txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "+";
         }
 
+        private void btnSubtract_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMultiply_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDivision_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnEquals_Click(object sender, EventArgs e)
         {
             operation = true;
 
             txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
             txtDisp1.Text = (float.Parse(num1) + float.Parse(txtDisp1.Text)).ToString();
+        }
+
+        private void btnC_Click(object sender, EventArgs e)
+        {
+            txtDisp1.Text = "0";
+            txtDisp2.Clear();
+            operation = false;
+            operation_sign = "";
+        }
+
+        private void btnCE_Click(object sender, EventArgs e)
+        {
+            txtDisp1.Text = "0";
+            operation = false;
+            operation_sign = "";
         }
     }
 }
