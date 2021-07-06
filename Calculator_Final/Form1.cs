@@ -305,7 +305,10 @@ namespace Calculator_Final
 
         private void btnDivision_Click(object sender, EventArgs e)
         {
-
+            operation = true;
+            operation_sign = "/";
+            num1 = txtDisp1.Text;
+            txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "/";
         }
 
         private void btnEquals_Click(object sender, EventArgs e)
@@ -330,6 +333,13 @@ namespace Calculator_Final
 
                 txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
                 txtDisp1.Text = (float.Parse(num1) * float.Parse(txtDisp1.Text)).ToString();
+            }
+            else if (operation_sign == "/")
+            {
+                equals = true;
+
+                txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
+                txtDisp1.Text = (float.Parse(num1) / float.Parse(txtDisp1.Text)).ToString();
             }
         }
 
