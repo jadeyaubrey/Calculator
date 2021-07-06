@@ -13,6 +13,7 @@ namespace Calculator_Final
     public partial class frmCalculator : Form
     {
         Boolean operation = false;
+        Boolean equals = false;
         string num1 = "";
         string operation_sign = "";
 
@@ -26,6 +27,7 @@ namespace Calculator_Final
             if (operation)
             {
                 txtDisp1.Text = "";
+                txtDisp1.Text = "1";
             }
             else if (txtDisp1.Text == "0" && txtDisp1.Text != null)
             {
@@ -44,9 +46,16 @@ namespace Calculator_Final
             if (operation)
             {
                 txtDisp1.Text = "";
+                txtDisp1.Text = "2";
             }
-
-            txtDisp1.Text = txtDisp1.Text + "2";
+            else if (txtDisp1.Text == "0" && txtDisp1.Text != null)
+            {
+                txtDisp1.Text = "2";
+            }
+            else
+            {
+                txtDisp1.Text = txtDisp1.Text + "2";
+            }
             operation = false; 
         }
 
@@ -55,9 +64,17 @@ namespace Calculator_Final
             if (operation)
             {
                 txtDisp1.Text = "";
+                txtDisp1.Text = "3";
+            }
+            else if (txtDisp1.Text == "0" && txtDisp1.Text != null)
+            {
+                txtDisp1.Text = "3";
+            }
+            else
+            {
+                txtDisp1.Text = txtDisp1.Text + "3";
             }
 
-            txtDisp1.Text = txtDisp1.Text + "3";
             operation = false;
         }
 
@@ -66,9 +83,16 @@ namespace Calculator_Final
             if (operation)
             {
                 txtDisp1.Text = "";
+                txtDisp1.Text = "0";
             }
-
-            txtDisp1.Text = txtDisp1.Text + "0";
+            else if (txtDisp1.Text == "0" && txtDisp1.Text != null)
+            {
+                txtDisp1.Text = "0";
+            }
+            else
+            {
+                txtDisp1.Text = txtDisp1.Text + "0";
+            }
             operation = false;
         }
 
@@ -77,9 +101,17 @@ namespace Calculator_Final
             if (operation)
             {
                 txtDisp1.Text = "";
+                txtDisp1.Text = "4";
+            }
+            else if (txtDisp1.Text == "0" && txtDisp1.Text != null)
+            {
+                txtDisp1.Text = "4";
+            }
+            else
+            {
+                txtDisp1.Text = txtDisp1.Text + "4";
             }
 
-            txtDisp1.Text = txtDisp1.Text + "4";
             operation = false;
         }
 
@@ -88,6 +120,15 @@ namespace Calculator_Final
             if (operation)
             {
                 txtDisp1.Text = "";
+                txtDisp1.Text = "5";
+            }
+            else if (txtDisp1.Text == "0" && txtDisp1.Text != null)
+            {
+                txtDisp1.Text = "5";
+            }
+            else
+            {
+                txtDisp1.Text = txtDisp1.Text + "5";
             }
 
             txtDisp1.Text = txtDisp1.Text + "5";
@@ -99,9 +140,16 @@ namespace Calculator_Final
             if (operation)
             {
                 txtDisp1.Text = "";
+                txtDisp1.Text = "6";
             }
-
-            txtDisp1.Text = txtDisp1.Text + "6";
+            else if (txtDisp1.Text == "0" && txtDisp1.Text != null)
+            {
+                txtDisp1.Text = "6";
+            }
+            else
+            {
+                txtDisp1.Text = txtDisp1.Text + "6";
+            }
             operation = false;
         }
 
@@ -110,15 +158,35 @@ namespace Calculator_Final
             if (operation)
             {
                 txtDisp1.Text = "";
+                txtDisp1.Text = "7";
             }
-
-            txtDisp1.Text = txtDisp1.Text + "7";
+            else if (txtDisp1.Text == "0" && txtDisp1.Text != null)
+            {
+                txtDisp1.Text = "7";
+            }
+            else
+            {
+                txtDisp1.Text = txtDisp1.Text + "7";
+            }
             operation = false;
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            txtDisp1.Text = txtDisp1.Text + "8";
+            if (operation)
+            {
+                txtDisp1.Text = "";
+                txtDisp1.Text = "8";
+            }
+            else if (txtDisp1.Text == "0" && txtDisp1.Text != null)
+            {
+                txtDisp1.Text = "8";
+            }
+            else
+            {
+                txtDisp1.Text = txtDisp1.Text + "8";
+            }
+            operation = false;
         }
 
         private void btn9_Click(object sender, EventArgs e)
@@ -126,9 +194,16 @@ namespace Calculator_Final
             if (operation)
             {
                 txtDisp1.Text = "";
+                txtDisp1.Text = "9";
             }
-
-            txtDisp1.Text = txtDisp1.Text + "9";
+            else if (txtDisp1.Text == "0" && txtDisp1.Text != null)
+            {
+                txtDisp1.Text = "9";
+            }
+            else
+            {
+                txtDisp1.Text = txtDisp1.Text + "9";
+            }
             operation = false;
         }
 
@@ -137,7 +212,7 @@ namespace Calculator_Final
             txtDisp1.Text = txtDisp1.Text + ".";
         }
 
-        //operations
+        // basic arithmetic operations
         private void btnAdd_Click(object sender, EventArgs e)
         {
             operation = true;
@@ -164,6 +239,7 @@ namespace Calculator_Final
         private void btnEquals_Click(object sender, EventArgs e)
         {
             operation = true;
+            equals = true;
 
             txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
             txtDisp1.Text = (float.Parse(num1) + float.Parse(txtDisp1.Text)).ToString();
