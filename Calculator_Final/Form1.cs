@@ -275,7 +275,17 @@ namespace Calculator_Final
 
         private void btnDecimal_Click(object sender, EventArgs e)
         {
-            txtDisp1.Text = txtDisp1.Text + ".";
+            if ((txtDisp1.Text == "0" && txtDisp1.Text != null) || (operation) || (equals))
+            {
+                equals = false;
+                operation = false;
+                txtDisp2.Clear();
+                txtDisp1.Text = "0.";
+            }
+            else
+            {
+                txtDisp1.Text = txtDisp1.Text + ".";
+            }
         }
 
         // basic arithmetic operations
