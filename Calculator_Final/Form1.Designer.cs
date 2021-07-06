@@ -117,6 +117,7 @@ namespace Calculator_Final
             this.btnEquals.TabIndex = 2;
             this.btnEquals.Text = "=";
             this.btnEquals.UseVisualStyleBackColor = false;
+            this.btnEquals.Click += new System.EventHandler(this.btnEquals_Click);
             // 
             // btn3
             // 

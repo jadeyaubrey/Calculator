@@ -13,7 +13,8 @@ namespace Calculator_Final
     public partial class frmCalculator : Form
     {
         Boolean operation = false;
-        // solver will be the on to collect the numbers and then solve the equations later on 
+        string num1 = "";
+        string operation_sign = "";
 
         public frmCalculator()
         {
@@ -132,8 +133,17 @@ namespace Calculator_Final
         private void btnAdd_Click(object sender, EventArgs e)
         {
             operation = true;
+            operation_sign = "+";
+            num1 = txtDisp1.Text;
             txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "+";
         }
 
+        private void btnEquals_Click(object sender, EventArgs e)
+        {
+            operation = true;
+
+            txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
+            txtDisp1.Text = (float.Parse(num1) + float.Parse(txtDisp1.Text)).ToString();
+        }
     }
 }
