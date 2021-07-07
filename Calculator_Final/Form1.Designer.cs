@@ -300,6 +300,7 @@ namespace Calculator_Final
             this.btnSQRT.TabIndex = 19;
             this.btnSQRT.Text = "√x";
             this.btnSQRT.UseVisualStyleBackColor = false;
+            this.btnSQRT.Click += new System.EventHandler(this.btnSQRT_Click);
             // 
             // btnDivision
             // 

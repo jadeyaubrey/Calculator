@@ -307,6 +307,8 @@ namespace Calculator_Final
             //}
             ////else
             {
+                txtDisp2.Clear();
+                btnEquals.PerformClick();
                 operation = true;
                 operation_sign = "-";
                 num1 = txtDisp1.Text;
@@ -385,6 +387,7 @@ namespace Calculator_Final
             operation_sign = "";
         }
 
+        //---------- A D D I T I O N A L  O P E R A T I O N S
         private void btnDel_Click(object sender, EventArgs e)
         {
             if (txtDisp1.Text.Length > 0)
@@ -419,6 +422,16 @@ namespace Calculator_Final
             num1 = txtDisp1.Text;
             txtDisp1.Text = ((float.Parse(num1)) * (float.Parse(num1))).ToString();
             txtDisp2.Text = "sqr( " + num1 + " )";
+
+            operation = true;
+            equals = false;
+        }
+
+        private void btnSQRT_Click(object sender, EventArgs e)
+        {
+            num1 = txtDisp1.Text;
+            txtDisp1.Text = (Math.Sqrt(float.Parse(num1))).ToString();
+            txtDisp2.Text = "√( " + num1 + " )";
 
             operation = true;
             equals = false;
