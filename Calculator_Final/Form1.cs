@@ -14,6 +14,7 @@ namespace Calculator_Final
     {
         Boolean operation = false;
         Boolean equals = false;
+        Boolean memory_on = false;
         string num1 = ""; // display
         string operation_sign = "";
         string memory = "";
@@ -27,7 +28,7 @@ namespace Calculator_Final
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            if (operation)
+            if (operation || memory_on)
             {
                 txtDisp1.Text = "";
                 txtDisp1.Text = "1";
@@ -46,14 +47,14 @@ namespace Calculator_Final
             {
                 txtDisp1.Text = txtDisp1.Text + "1";
             }
-
             operation = false;
             equals = false;
+            memory_on = false;
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            if (operation)
+            if (operation || memory_on)
             {
                 txtDisp1.Text = "";
                 txtDisp1.Text = "2";
@@ -74,11 +75,12 @@ namespace Calculator_Final
             }
             operation = false;
             equals = false;
+            memory_on = false;
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            if (operation)
+            if (operation || memory_on)
             {
                 txtDisp1.Text = "";
                 txtDisp1.Text = "3";
@@ -99,11 +101,12 @@ namespace Calculator_Final
             }
             operation = false;
             equals = false;
+            memory_on = false;
         }
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            if (operation)
+            if (operation || memory_on)
             {
                 txtDisp1.Text = "";
                 txtDisp1.Text = "0";
@@ -124,11 +127,12 @@ namespace Calculator_Final
             }
             operation = false;
             equals = false;
+            memory_on = false;
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            if (operation)
+            if (operation || memory_on)
             {
                 txtDisp1.Text = "";
                 txtDisp1.Text = "4";
@@ -149,11 +153,12 @@ namespace Calculator_Final
             }
             operation = false;
             equals = false;
+            memory_on = false;
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            if (operation)
+            if (operation || memory_on)
             {
                 txtDisp1.Text = "";
                 txtDisp1.Text = "5";
@@ -174,11 +179,12 @@ namespace Calculator_Final
             }
             operation = false;
             equals = false;
+            memory_on = false;
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            if (operation)
+            if (operation || memory_on)
             {
                 txtDisp1.Text = "";
                 txtDisp1.Text = "6";
@@ -199,11 +205,12 @@ namespace Calculator_Final
             }
             operation = false;
             equals = false;
+            memory_on = false;
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            if (operation)
+            if (operation || memory_on)
             {
                 txtDisp1.Text = "";
                 txtDisp1.Text = "7";
@@ -224,11 +231,12 @@ namespace Calculator_Final
             }
             operation = false;
             equals = false;
+            memory_on = false;
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            if (operation)
+            if (operation || memory_on)
             {
                 txtDisp1.Text = "";
                 txtDisp1.Text = "8";
@@ -249,11 +257,12 @@ namespace Calculator_Final
             }
             operation = false;
             equals = false;
+            memory_on = false;
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            if (operation)
+            if (operation || memory_on)
             {
                 txtDisp1.Text = "";
                 txtDisp1.Text = "9";
@@ -274,6 +283,7 @@ namespace Calculator_Final
             }
             operation = false;
             equals = false;
+            memory_on = false;
         }
 
         private void btnDecimal_Click(object sender, EventArgs e)
@@ -449,6 +459,7 @@ namespace Calculator_Final
             btnMC.Enabled = true;
             btnMR.Enabled = true;
             memory = txtDisp1.Text;
+            memory_on = true;
         }
 
         private void btnMMinus_Click(object sender, EventArgs e)
@@ -463,6 +474,7 @@ namespace Calculator_Final
             }
             btnMC.Enabled = true;
             btnMR.Enabled = true;
+            memory_on = true;
         }
 
         private void btnMC_Click(object sender, EventArgs e)
@@ -470,11 +482,13 @@ namespace Calculator_Final
             memory = "";
             btnMC.Enabled = false;
             btnMR.Enabled = false;
+            memory_on = true;
         }
 
         private void btnMR_Click(object sender, EventArgs e)
         {
             txtDisp1.Text = memory;
+            memory_on = true;
         }
 
         private void btnMPlus_Click(object sender, EventArgs e)
@@ -489,6 +503,7 @@ namespace Calculator_Final
             }
             btnMC.Enabled = true;
             btnMR.Enabled = true;
+            memory_on = true;
         }
     }
 }
