@@ -403,9 +403,8 @@ namespace Calculator_Final
             this.txtDisp1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDisp1.Font = new System.Drawing.Font("Segoe UI Semibold", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtDisp1.Location = new System.Drawing.Point(6, 91);
-            this.txtDisp1.Multiline = true;
             this.txtDisp1.Name = "txtDisp1";
-            this.txtDisp1.Size = new System.Drawing.Size(385, 79);
+            this.txtDisp1.Size = new System.Drawing.Size(385, 80);
             this.txtDisp1.TabIndex = 24;
             this.txtDisp1.Text = "0";
             this.txtDisp1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;

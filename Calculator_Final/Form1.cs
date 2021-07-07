@@ -295,14 +295,23 @@ namespace Calculator_Final
         //  ------- B A S I C    A R I T H M E T I C S 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (operation_sign == "+")
+            //if (operation_sign == "+")
+            //{
+            //    txtDisp2.Text = txtDisp2.Text;
+            //}
+            //else if (operation_sign != "")
+            //{
+            //    operation_sign = "+";
+            //    txtDisp2.Text =
+
+            //}
+            ////else
             {
-                txtDisp2.Text = txtDisp2.Text;
+                operation = true;
+                operation_sign = "-";
+                num1 = txtDisp1.Text;
+                txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "+";
             }
-            operation = true;
-            operation_sign = "-";
-            num1 = txtDisp1.Text;
-            //txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "+";
         }
 
         private void btnSubtract_Click(object sender, EventArgs e)
@@ -407,7 +416,12 @@ namespace Calculator_Final
 
         private void btnSquare_Click(object sender, EventArgs e)
         {
+            num1 = txtDisp1.Text;
+            txtDisp1.Text = ((float.Parse(num1)) * (float.Parse(num1))).ToString();
+            txtDisp2.Text = "sqr( " + num1 + " )";
 
+            operation = true;
+            equals = false;
         }
     }
 }
