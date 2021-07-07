@@ -400,7 +400,7 @@ namespace Calculator_Final
             // 
             // txtDisp1
             // 
-            this.txtDisp1.BackColor = System.Drawing.Color.LightGray;
+            this.txtDisp1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(236)))), ((int)(((byte)(232)))));
             this.txtDisp1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDisp1.Font = new System.Drawing.Font("Segoe UI Semibold", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtDisp1.Location = new System.Drawing.Point(6, 91);
@@ -454,6 +454,7 @@ namespace Calculator_Final
             this.btnMC.TabIndex = 31;
             this.btnMC.Text = "MC";
             this.btnMC.UseVisualStyleBackColor = true;
+            this.btnMC.Click += new System.EventHandler(this.btnMC_Click);
             // 
             // btnMR
             // 
@@ -466,6 +467,7 @@ namespace Calculator_Final
             this.btnMR.TabIndex = 32;
             this.btnMR.Text = "MR";
             this.btnMR.UseVisualStyleBackColor = true;
+            this.btnMR.Click += new System.EventHandler(this.btnMR_Click);
             // 
             // btnMMinus
             // 
@@ -491,6 +493,7 @@ namespace Calculator_Final
             this.btnMPlus.TabIndex = 33;
             this.btnMPlus.Text = "M+";
             this.btnMPlus.UseVisualStyleBackColor = true;
+            this.btnMPlus.Click += new System.EventHandler(this.btnMPlus_Click);
             // 
             // btnMS
             // 

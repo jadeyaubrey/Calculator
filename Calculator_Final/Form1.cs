@@ -453,9 +453,42 @@ namespace Calculator_Final
 
         private void btnMMinus_Click(object sender, EventArgs e)
         {
+            if (memory == "")
+            {
+                memory = (0 - (float.Parse(txtDisp1.Text))).ToString();
+            }
+            else
+            {
+                memory = (float.Parse(memory) - float.Parse(txtDisp1.Text)).ToString();
+            }
             btnMC.Enabled = true;
             btnMR.Enabled = true;
-            memory = (float.Parse(memory) - float.Parse(txtDisp1.Text)).ToString();
+        }
+
+        private void btnMC_Click(object sender, EventArgs e)
+        {
+            memory = "";
+            btnMC.Enabled = false;
+            btnMR.Enabled = false;
+        }
+
+        private void btnMR_Click(object sender, EventArgs e)
+        {
+            txtDisp1.Text = memory;
+        }
+
+        private void btnMPlus_Click(object sender, EventArgs e)
+        {
+            if (memory == "")
+            {
+                memory = (0 + (float.Parse(txtDisp1.Text))).ToString();
+            }
+            else
+            {
+                memory = (float.Parse(memory) + float.Parse(txtDisp1.Text)).ToString();
+            }
+            btnMC.Enabled = true;
+            btnMR.Enabled = true;
         }
     }
 }
