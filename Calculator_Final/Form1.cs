@@ -292,14 +292,17 @@ namespace Calculator_Final
             operation = false;
         }
 
-        // basic arithmetic operations
+        //  ------- B A S I C    A R I T H M E T I C S 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-           
             operation = true;
             operation_sign = "+";
             num1 = txtDisp1.Text;
             txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "+";
+
+            txtDisp2.Text = txtDisp2.Text + txtDisp1.Text ;
+            txtDisp1.Text = (float.Parse(num1) + float.Parse(txtDisp1.Text)).ToString();
+
         }
 
         private void btnSubtract_Click(object sender, EventArgs e)
@@ -325,7 +328,7 @@ namespace Calculator_Final
             num1 = txtDisp1.Text;
             txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "/";
         }
-
+        //-------- E N D  O F  B A S I C  A R I T H M E T I C S
         private void btnEquals_Click(object sender, EventArgs e)
         {
             if (operation_sign == "+")
@@ -383,6 +386,24 @@ namespace Calculator_Final
             {
                 txtDisp1.Text = "0";
             }
+        }
+
+        private void btn1overX_Click(object sender, EventArgs e)
+        {
+            if (txtDisp1.Text == "0")
+            {
+                txtDisp1.Text = "Cannot divide by zero";
+                txtDisp2.Text = "1/(0)";
+            }
+            else
+            {
+                num1 = txtDisp1.Text;
+                txtDisp1.Text = (1 / float.Parse(num1)).ToString();
+                txtDisp2.Text = "1 /" + "(" + num1 + ")";
+            }
+
+            operation = true;
+            equals = false;
         }
     }
 }
