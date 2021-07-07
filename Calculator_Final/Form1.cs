@@ -325,8 +325,8 @@ namespace Calculator_Final
                 operation_sign = "+";
                 num1 = txtDisp1.Text;
                 txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "+";
-                
-                
+
+
             }
         }
 
@@ -508,7 +508,31 @@ namespace Calculator_Final
 
         private void btnPerc_Click(object sender, EventArgs e)
         {
+            if (operation_sign == "+")
+            {
+                txtDisp1.Text = (float.Parse(num1) + ((float.Parse(txtDisp1.Text) / 100) * (float.Parse(num1)))).ToString();
+            }
+            else if (operation_sign == "-")
+            {
+                equals = true;
 
+                txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
+                txtDisp1.Text = (float.Parse(num1) - float.Parse(txtDisp1.Text)).ToString();
+            }
+            else if (operation_sign == "*")
+            {
+                equals = true;
+
+                txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
+                txtDisp1.Text = (float.Parse(num1) * float.Parse(txtDisp1.Text)).ToString();
+            }
+            else if (operation_sign == "/")
+            {
+                equals = true;
+
+                txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
+                txtDisp1.Text = (float.Parse(num1) / float.Parse(txtDisp1.Text)).ToString();
+            }
         }
 
         private void btnNeg_Click(object sender, EventArgs e)

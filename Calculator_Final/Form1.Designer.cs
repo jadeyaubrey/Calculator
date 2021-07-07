@@ -415,12 +415,12 @@ namespace Calculator_Final
             // txtDisp2
             // 
             this.txtDisp2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(236)))), ((int)(((byte)(232)))));
-            this.txtDisp2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDisp2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtDisp2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDisp2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtDisp2.ForeColor = System.Drawing.Color.DimGray;
             this.txtDisp2.Location = new System.Drawing.Point(6, 53);
             this.txtDisp2.Name = "txtDisp2";
-            this.txtDisp2.Size = new System.Drawing.Size(385, 34);
+            this.txtDisp2.Size = new System.Drawing.Size(385, 27);
             this.txtDisp2.TabIndex = 25;
             this.txtDisp2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
