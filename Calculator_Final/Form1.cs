@@ -307,18 +307,19 @@ namespace Calculator_Final
             //}
             ////else
             {
-                txtDisp2.Clear();
-                btnEquals.PerformClick();
                 operation = true;
-                operation_sign = "-";
+                txtDisp2.Clear();
+                operation_sign = "+";
                 num1 = txtDisp1.Text;
                 txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "+";
+                
             }
         }
 
         private void btnSubtract_Click(object sender, EventArgs e)
         {
             operation = true;
+            txtDisp2.Clear();
             operation_sign = "-";
             num1 = txtDisp1.Text;
             txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "-";
@@ -327,6 +328,7 @@ namespace Calculator_Final
         private void btnMultiply_Click(object sender, EventArgs e)
         {
             operation = true;
+            txtDisp2.Clear();
             operation_sign = "*";
             num1 = txtDisp1.Text;
             txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "*";
@@ -335,6 +337,7 @@ namespace Calculator_Final
         private void btnDivision_Click(object sender, EventArgs e)
         {
             operation = true;
+            txtDisp2.Clear();
             operation_sign = "/";
             num1 = txtDisp1.Text;
             txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "/";
