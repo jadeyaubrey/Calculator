@@ -16,10 +16,13 @@ namespace Calculator_Final
         Boolean equals = false;
         string num1 = ""; // display
         string operation_sign = "";
+        string memory = "";
 
         public frmCalculator()
         {
             InitializeComponent();
+            btnMC.Enabled = false;
+            btnMR.Enabled = false;
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -313,6 +316,7 @@ namespace Calculator_Final
                 num1 = txtDisp1.Text;
                 txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "+";
                 
+                
             }
         }
 
@@ -438,6 +442,20 @@ namespace Calculator_Final
 
             operation = true;
             equals = false;
+        }
+        //--------- M E M O R Y   B U T T O N S 
+        private void btnMS_Click(object sender, EventArgs e)
+        {
+            btnMC.Enabled = true;
+            btnMR.Enabled = true;
+            memory = txtDisp1.Text;
+        }
+
+        private void btnMMinus_Click(object sender, EventArgs e)
+        {
+            btnMC.Enabled = true;
+            btnMR.Enabled = true;
+            memory = (float.Parse(memory) - float.Parse(txtDisp1.Text)).ToString();
         }
     }
 }

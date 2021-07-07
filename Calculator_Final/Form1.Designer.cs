@@ -478,6 +478,7 @@ namespace Calculator_Final
             this.btnMMinus.TabIndex = 34;
             this.btnMMinus.Text = "M-";
             this.btnMMinus.UseVisualStyleBackColor = true;
+            this.btnMMinus.Click += new System.EventHandler(this.btnMMinus_Click);
             // 
             // btnMPlus
             // 
@@ -502,6 +503,7 @@ namespace Calculator_Final
             this.btnMS.TabIndex = 35;
             this.btnMS.Text = "MS";
             this.btnMS.UseVisualStyleBackColor = true;
+            this.btnMS.Click += new System.EventHandler(this.btnMS_Click);
             // 
             // frmCalculator
             // 
