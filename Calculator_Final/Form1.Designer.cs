@@ -366,6 +366,7 @@ namespace Calculator_Final
             this.btnDel.TabIndex = 22;
             this.btnDel.Text = "⌫";
             this.btnDel.UseVisualStyleBackColor = false;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnCE
             // 

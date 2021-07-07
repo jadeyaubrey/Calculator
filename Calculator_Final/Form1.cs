@@ -372,5 +372,17 @@ namespace Calculator_Final
             operation = false;
             operation_sign = "";
         }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            if (txtDisp1.Text.Length > 0)
+            {
+                txtDisp1.Text = txtDisp1.Text.Remove(txtDisp1.Text.Length - 1, 1);
+            }
+            else if ((txtDisp1.Text.Length == 0) || txtDisp1.Text == "0")
+            {
+                txtDisp1.Text = "0";
+            }
+        }
     }
 }
