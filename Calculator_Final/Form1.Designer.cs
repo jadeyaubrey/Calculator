@@ -77,6 +77,7 @@ namespace Calculator_Final
             this.btnNeg.TabIndex = 0;
             this.btnNeg.Text = "+/-";
             this.btnNeg.UseVisualStyleBackColor = false;
+            this.btnNeg.Click += new System.EventHandler(this.btnNeg_Click);
             // 
             // btn0
             // 
@@ -397,6 +398,7 @@ namespace Calculator_Final
             this.btnPerc.TabIndex = 20;
             this.btnPerc.Text = "%";
             this.btnPerc.UseVisualStyleBackColor = false;
+            this.btnPerc.Click += new System.EventHandler(this.btnPerc_Click);
             // 
             // txtDisp1
             // 

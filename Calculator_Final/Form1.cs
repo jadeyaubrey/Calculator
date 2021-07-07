@@ -505,5 +505,15 @@ namespace Calculator_Final
             btnMR.Enabled = true;
             memory_on = true;
         }
+
+        private void btnPerc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNeg_Click(object sender, EventArgs e)
+        {
+            txtDisp1.Text = (-1 * float.Parse(txtDisp1.Text)).ToString();
+        }
     }
 }
