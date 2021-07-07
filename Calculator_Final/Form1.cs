@@ -14,7 +14,7 @@ namespace Calculator_Final
     {
         Boolean operation = false;
         Boolean equals = false;
-        string num1 = "";
+        string num1 = ""; // display
         string operation_sign = "";
 
         public frmCalculator()
@@ -295,14 +295,14 @@ namespace Calculator_Final
         //  ------- B A S I C    A R I T H M E T I C S 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if (operation_sign == "+")
+            {
+                txtDisp2.Text = txtDisp2.Text;
+            }
             operation = true;
-            operation_sign = "+";
+            operation_sign = "-";
             num1 = txtDisp1.Text;
-            txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "+";
-
-            txtDisp2.Text = txtDisp2.Text + txtDisp1.Text ;
-            txtDisp1.Text = (float.Parse(num1) + float.Parse(txtDisp1.Text)).ToString();
-
+            //txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "+";
         }
 
         private void btnSubtract_Click(object sender, EventArgs e)
@@ -401,9 +401,13 @@ namespace Calculator_Final
                 txtDisp1.Text = (1 / float.Parse(num1)).ToString();
                 txtDisp2.Text = "1 /" + "(" + num1 + ")";
             }
-
             operation = true;
             equals = false;
+        }
+
+        private void btnSquare_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

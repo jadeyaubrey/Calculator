@@ -327,6 +327,7 @@ namespace Calculator_Final
             this.btnSquare.TabIndex = 17;
             this.btnSquare.Text = "x^2";
             this.btnSquare.UseVisualStyleBackColor = false;
+            this.btnSquare.Click += new System.EventHandler(this.btnSquare_Click);
             // 
             // btn1overX
             // 
