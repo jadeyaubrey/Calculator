@@ -277,20 +277,25 @@ namespace Calculator_Final
         {
             if ((txtDisp1.Text == "0" && txtDisp1.Text != null) || (operation) || (equals))
             {
-                equals = false;
-                operation = false;
                 txtDisp2.Clear();
                 txtDisp1.Text = "0.";
+            }
+            else if (txtDisp1.Text.Contains("."))
+            {
+                txtDisp1.Text = txtDisp1.Text;
             }
             else
             {
                 txtDisp1.Text = txtDisp1.Text + ".";
             }
+            equals = false;
+            operation = false;
         }
 
         // basic arithmetic operations
         private void btnAdd_Click(object sender, EventArgs e)
         {
+           
             operation = true;
             operation_sign = "+";
             num1 = txtDisp1.Text;
