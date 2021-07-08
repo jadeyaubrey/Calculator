@@ -547,14 +547,14 @@ namespace Calculator_Final
             }
             else if (operation_sign == "*")
             {
-                txtDisp2.Text = num1 + "*" + ((float.Parse(txtDisp1.Text) / 100)).ToString();
+                txtDisp2.Text = num1 + " * " + ((float.Parse(txtDisp1.Text) / 100)).ToString();
                 txtDisp1.Text = (float.Parse(txtDisp1.Text) / 100).ToString();
                 percent = true;
             }
             else if (operation_sign == "/")
             {
-                txtDisp2.Text = num1 + "/" + ((float.Parse(txtDisp1.Text) / 100) * (float.Parse(num1))).ToString();
-                txtDisp1.Text = ((float.Parse(txtDisp1.Text) / 100) / (float.Parse(num1))).ToString();
+                txtDisp2.Text = num1 + " / " + ((float.Parse(txtDisp1.Text) / 100)).ToString();
+                txtDisp1.Text = (float.Parse(txtDisp1.Text) / 100).ToString();
                 percent = true;
             }
         }
