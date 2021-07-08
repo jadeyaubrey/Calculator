@@ -52,6 +52,7 @@ namespace Calculator_Final
             operation = false;
             equals = false;
             memory_on = false;
+            percent = false;
         }
 
         private void btn2_Click(object sender, EventArgs e)
@@ -78,6 +79,7 @@ namespace Calculator_Final
             operation = false;
             equals = false;
             memory_on = false;
+            percent = false;
         }
 
         private void btn3_Click(object sender, EventArgs e)
@@ -104,6 +106,7 @@ namespace Calculator_Final
             operation = false;
             equals = false;
             memory_on = false;
+            percent = false;
         }
 
         private void btn0_Click(object sender, EventArgs e)
@@ -130,6 +133,7 @@ namespace Calculator_Final
             operation = false;
             equals = false;
             memory_on = false;
+            percent = false;
         }
 
         private void btn4_Click(object sender, EventArgs e)
@@ -156,6 +160,7 @@ namespace Calculator_Final
             operation = false;
             equals = false;
             memory_on = false;
+            percent = false;
         }
 
         private void btn5_Click(object sender, EventArgs e)
@@ -182,6 +187,7 @@ namespace Calculator_Final
             operation = false;
             equals = false;
             memory_on = false;
+            percent = false;
         }
 
         private void btn6_Click(object sender, EventArgs e)
@@ -208,6 +214,7 @@ namespace Calculator_Final
             operation = false;
             equals = false;
             memory_on = false;
+            percent = false;
         }
 
         private void btn7_Click(object sender, EventArgs e)
@@ -234,6 +241,7 @@ namespace Calculator_Final
             operation = false;
             equals = false;
             memory_on = false;
+            percent = false;
         }
 
         private void btn8_Click(object sender, EventArgs e)
@@ -260,6 +268,7 @@ namespace Calculator_Final
             operation = false;
             equals = false;
             memory_on = false;
+            percent = false;
         }
 
         private void btn9_Click(object sender, EventArgs e)
@@ -286,6 +295,7 @@ namespace Calculator_Final
             operation = false;
             equals = false;
             memory_on = false;
+            percent = false;
         }
 
         private void btnDecimal_Click(object sender, EventArgs e)
@@ -305,6 +315,8 @@ namespace Calculator_Final
             }
             equals = false;
             operation = false;
+            memory_on = false;
+            percent = false;
         }
 
         //  ------- B A S I C    A R I T H M E T I C S 
@@ -356,7 +368,6 @@ namespace Calculator_Final
                 }
                 else
                 {
-                    txtDisp2.Text = "";
                     txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
                     txtDisp1.Text = (float.Parse(num1) + float.Parse(txtDisp1.Text)).ToString();
                 }
@@ -364,24 +375,42 @@ namespace Calculator_Final
             }
             else if (operation_sign == "-")
             {
+                if (percent)
+                {
+                    txtDisp1.Text = (float.Parse(num1) - float.Parse(txtDisp1.Text)).ToString();
+                }
+                else
+                {
+                    txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
+                    txtDisp1.Text = (float.Parse(num1) - float.Parse(txtDisp1.Text)).ToString();
+                }
                 equals = true;
-
-                txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
-                txtDisp1.Text = (float.Parse(num1) - float.Parse(txtDisp1.Text)).ToString();
             }
             else if (operation_sign == "*")
             {
+                if (percent)
+                {
+                    txtDisp1.Text = (float.Parse(num1) * float.Parse(txtDisp1.Text)).ToString();
+                }
+                else
+                {
+                    txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
+                    txtDisp1.Text = (float.Parse(num1) * float.Parse(txtDisp1.Text)).ToString();
+                }
                 equals = true;
-
-                txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
-                txtDisp1.Text = (float.Parse(num1) * float.Parse(txtDisp1.Text)).ToString();
             }
             else if (operation_sign == "/")
             {
+                if (percent)
+                {
+                    txtDisp1.Text = (float.Parse(num1) / float.Parse(txtDisp1.Text)).ToString();
+                }
+                else
+                {
+                    txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
+                    txtDisp1.Text = (float.Parse(num1) / float.Parse(txtDisp1.Text)).ToString();
+                }
                 equals = true;
-
-                txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
-                txtDisp1.Text = (float.Parse(num1) / float.Parse(txtDisp1.Text)).ToString();
             }
         }
 
@@ -501,7 +530,7 @@ namespace Calculator_Final
             btnMR.Enabled = true;
             memory_on = true;
         }
-
+      
         private void btnPerc_Click(object sender, EventArgs e)
         {
             if (operation_sign == "+")
@@ -512,24 +541,21 @@ namespace Calculator_Final
             }
             else if (operation_sign == "-")
             {
-                equals = true;
-
-                txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
-                txtDisp1.Text = (float.Parse(num1) - float.Parse(txtDisp1.Text)).ToString();
+                txtDisp2.Text = num1 + "-" + ((float.Parse(txtDisp1.Text) / 100) * (float.Parse(num1))).ToString();
+                txtDisp1.Text = ((float.Parse(txtDisp1.Text) / 100) * (float.Parse(num1))).ToString();
+                percent = true;
             }
             else if (operation_sign == "*")
             {
-                equals = true;
-
-                txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
-                txtDisp1.Text = (float.Parse(num1) * float.Parse(txtDisp1.Text)).ToString();
+                txtDisp2.Text = num1 + "*" + ((float.Parse(txtDisp1.Text) / 100) * (float.Parse(num1))).ToString();
+                txtDisp1.Text = ((float.Parse(txtDisp1.Text) / 100) * (float.Parse(num1))).ToString();
+                percent = true;
             }
             else if (operation_sign == "/")
             {
-                equals = true;
-
-                txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
-                txtDisp1.Text = (float.Parse(num1) / float.Parse(txtDisp1.Text)).ToString();
+                txtDisp2.Text = num1 + "/" + ((float.Parse(txtDisp1.Text) / 100) * (float.Parse(num1))).ToString();
+                txtDisp1.Text = ((float.Parse(txtDisp1.Text) / 100) * (float.Parse(num1))).ToString();
+                percent = true;
             }
         }
 
