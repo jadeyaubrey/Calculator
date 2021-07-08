@@ -322,13 +322,11 @@ namespace Calculator_Final
         //  ------- B A S I C    A R I T H M E T I C S 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            {
-                operation = true;
-                txtDisp2.Clear();
-                operation_sign = "+";
-                num1 = txtDisp1.Text;
-                txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "+";
-            }
+            operation = true;
+            txtDisp2.Clear();
+            operation_sign = "+";
+            num1 = txtDisp1.Text;
+            txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "+";
         }
 
         private void btnSubtract_Click(object sender, EventArgs e)
@@ -376,7 +374,7 @@ namespace Calculator_Final
             else if (operation_sign == "-")
             {
                 if (percent)
-                {
+                { 
                     txtDisp1.Text = (float.Parse(num1) - float.Parse(txtDisp1.Text)).ToString();
                 }
                 else
@@ -563,5 +561,6 @@ namespace Calculator_Final
         {
             txtDisp1.Text = (-1 * float.Parse(txtDisp1.Text)).ToString();
         }
+
     }
 }

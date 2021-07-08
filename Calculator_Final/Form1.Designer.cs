@@ -412,6 +412,7 @@ namespace Calculator_Final
             this.txtDisp1.TabIndex = 24;
             this.txtDisp1.Text = "0";
             this.txtDisp1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDisp1.WordWrap = false;
             // 
             // txtDisp2
             // 
