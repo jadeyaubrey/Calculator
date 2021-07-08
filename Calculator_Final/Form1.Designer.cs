@@ -407,6 +407,7 @@ namespace Calculator_Final
             this.txtDisp1.Font = new System.Drawing.Font("Segoe UI Semibold", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtDisp1.Location = new System.Drawing.Point(6, 91);
             this.txtDisp1.Name = "txtDisp1";
+            this.txtDisp1.ReadOnly = true;
             this.txtDisp1.Size = new System.Drawing.Size(385, 80);
             this.txtDisp1.TabIndex = 24;
             this.txtDisp1.Text = "0";
@@ -420,6 +421,7 @@ namespace Calculator_Final
             this.txtDisp2.ForeColor = System.Drawing.Color.DimGray;
             this.txtDisp2.Location = new System.Drawing.Point(6, 53);
             this.txtDisp2.Name = "txtDisp2";
+            this.txtDisp2.ReadOnly = true;
             this.txtDisp2.Size = new System.Drawing.Size(385, 27);
             this.txtDisp2.TabIndex = 25;
             this.txtDisp2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -439,7 +441,7 @@ namespace Calculator_Final
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 0);
+            this.label1.Location = new System.Drawing.Point(12, 2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 41);
             this.label1.TabIndex = 27;
@@ -553,7 +555,7 @@ namespace Calculator_Final
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmCalculator";
-            this.Opacity = 0.9D;
+            this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
             this.ResumeLayout(false);

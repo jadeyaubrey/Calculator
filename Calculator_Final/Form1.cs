@@ -15,7 +15,9 @@ namespace Calculator_Final
         Boolean operation = false;
         Boolean equals = false;
         Boolean memory_on = false;
+        Boolean percent = false;
         string num1 = ""; // display
+        string num2 = "";
         string operation_sign = "";
         string memory = "";
 
@@ -308,25 +310,12 @@ namespace Calculator_Final
         //  ------- B A S I C    A R I T H M E T I C S 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            //if (operation_sign == "+")
-            //{
-            //    txtDisp2.Text = txtDisp2.Text;
-            //}
-            //else if (operation_sign != "")
-            //{
-            //    operation_sign = "+";
-            //    txtDisp2.Text =
-
-            //}
-            ////else
             {
                 operation = true;
                 txtDisp2.Clear();
                 operation_sign = "+";
                 num1 = txtDisp1.Text;
                 txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "+";
-
-
             }
         }
 
@@ -361,10 +350,17 @@ namespace Calculator_Final
         {
             if (operation_sign == "+")
             {
+                if (percent)
+                {
+                    txtDisp1.Text = (float.Parse(num1) + float.Parse(txtDisp1.Text)).ToString();
+                }
+                else
+                {
+                    txtDisp2.Text = "";
+                    txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
+                    txtDisp1.Text = (float.Parse(num1) + float.Parse(txtDisp1.Text)).ToString();
+                }
                 equals = true;
-
-                txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
-                txtDisp1.Text = (float.Parse(num1) + float.Parse(txtDisp1.Text)).ToString();
             }
             else if (operation_sign == "-")
             {
@@ -510,7 +506,9 @@ namespace Calculator_Final
         {
             if (operation_sign == "+")
             {
-                txtDisp1.Text = (float.Parse(num1) + ((float.Parse(txtDisp1.Text) / 100) * (float.Parse(num1)))).ToString();
+                txtDisp2.Text = num1 + "+" + ((float.Parse(txtDisp1.Text) / 100) * (float.Parse(num1))).ToString();
+                txtDisp1.Text = ((float.Parse(txtDisp1.Text) / 100) * (float.Parse(num1))).ToString();
+                percent = true;
             }
             else if (operation_sign == "-")
             {
