@@ -336,8 +336,7 @@ namespace Calculator_Final
             txtDisp2.Clear();
             operation_sign = "-";
             num1 = txtDisp1.Text;
-            txtDisp2.Text = txtDisp1.Text + "−";
-   
+            txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "−";
         }
 
         private void btnMultiply_Click(object sender, EventArgs e)
@@ -371,9 +370,8 @@ namespace Calculator_Final
                     string[] nums = txtDisp2.Text.Split('+', '=');
                     btnAdd.PerformClick();
                    
-                    txtDisp1.Text = (float.Parse(num1) + float.Parse(nums[1])).ToString();
                     txtDisp2.Text = txtDisp1.Text + "+" + nums[1] + "=";
-                    
+                    txtDisp1.Text = (float.Parse(num1) + float.Parse(nums[1])).ToString();
                 }
                 else
                 {
@@ -388,6 +386,14 @@ namespace Calculator_Final
                 { 
                     txtDisp1.Text = (float.Parse(num1) - float.Parse(txtDisp1.Text)).ToString();
                 }
+                else if ((equals) && (txtDisp2.Text.Contains("-")))
+                {
+                    string[] nums = txtDisp2.Text.Split('-', '=');
+                    btnSubtract.PerformClick();
+
+                    txtDisp2.Text = txtDisp1.Text + "-" + nums[1] + "=";
+                    txtDisp1.Text = (float.Parse(num1) + float.Parse(nums[1])).ToString();
+                }
                 else
                 {
                     txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
@@ -400,6 +406,14 @@ namespace Calculator_Final
                 if (percent)
                 {
                     txtDisp1.Text = (float.Parse(num1) * float.Parse(txtDisp1.Text)).ToString();
+                }
+                else if ((equals) && (txtDisp2.Text.Contains("×")))
+                {
+                    string[] nums = txtDisp2.Text.Split('×', '=');
+                    btnMultiply.PerformClick();
+
+                    txtDisp2.Text = txtDisp1.Text + "×" + nums[1] + "=";
+                    txtDisp1.Text = (float.Parse(num1) * float.Parse(nums[1])).ToString();
                 }
                 else
                 {
@@ -414,13 +428,21 @@ namespace Calculator_Final
                 {
                     txtDisp1.Text = (float.Parse(num1) / float.Parse(txtDisp1.Text)).ToString();
                 }
+                else if ((equals) && (txtDisp2.Text.Contains("÷")))
+                {
+                    string[] nums = txtDisp2.Text.Split('÷', '=');
+                    btnDivision.PerformClick();
+
+                    txtDisp2.Text = txtDisp1.Text + "÷" + nums[1] + "=";
+                    txtDisp1.Text = (float.Parse(num1) / float.Parse(nums[1])).ToString();
+                }
                 else
                 {
                     txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "=";
                     txtDisp1.Text = (float.Parse(num1) / float.Parse(txtDisp1.Text)).ToString();
                 }
                 equals = true;
-            }
+            } 
         }
 
         private void btnC_Click(object sender, EventArgs e)
@@ -429,6 +451,7 @@ namespace Calculator_Final
             txtDisp2.Clear();
             operation = false;
             operation_sign = "";
+            equals = false;
         }
 
         private void btnCE_Click(object sender, EventArgs e)
@@ -436,6 +459,7 @@ namespace Calculator_Final
             txtDisp1.Text = "0";
             operation = false;
             operation_sign = "";
+            equals = false;
         }
 
         //---------- A D D I T I O N A L  O P E R A T I O N S
