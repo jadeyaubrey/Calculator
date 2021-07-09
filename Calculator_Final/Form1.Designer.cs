@@ -112,7 +112,7 @@ namespace Calculator_Final
             this.btnEquals.BackColor = System.Drawing.Color.LightBlue;
             this.btnEquals.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue;
             this.btnEquals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEquals.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEquals.Font = new System.Drawing.Font("Segoe UI Light", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEquals.Location = new System.Drawing.Point(297, 563);
             this.btnEquals.Name = "btnEquals";
             this.btnEquals.Size = new System.Drawing.Size(94, 64);
@@ -140,7 +140,7 @@ namespace Calculator_Final
             this.btnAdd.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Light", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAdd.Location = new System.Drawing.Point(297, 496);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(94, 64);
@@ -196,7 +196,7 @@ namespace Calculator_Final
             this.btnMultiply.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnMultiply.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnMultiply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMultiply.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMultiply.Font = new System.Drawing.Font("Segoe UI Light", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMultiply.Location = new System.Drawing.Point(297, 362);
             this.btnMultiply.Name = "btnMultiply";
             this.btnMultiply.Size = new System.Drawing.Size(94, 64);
@@ -252,12 +252,12 @@ namespace Calculator_Final
             this.btnSubtract.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnSubtract.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnSubtract.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubtract.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSubtract.Font = new System.Drawing.Font("Segoe UI Light", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSubtract.Location = new System.Drawing.Point(297, 429);
             this.btnSubtract.Name = "btnSubtract";
             this.btnSubtract.Size = new System.Drawing.Size(94, 64);
             this.btnSubtract.TabIndex = 10;
-            this.btnSubtract.Text = "-";
+            this.btnSubtract.Text = "−";
             this.btnSubtract.UseVisualStyleBackColor = false;
             this.btnSubtract.Click += new System.EventHandler(this.btnSubtract_Click);
             // 
@@ -294,12 +294,12 @@ namespace Calculator_Final
             this.btnSQRT.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnSQRT.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnSQRT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSQRT.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSQRT.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSQRT.Location = new System.Drawing.Point(200, 295);
             this.btnSQRT.Name = "btnSQRT";
             this.btnSQRT.Size = new System.Drawing.Size(94, 64);
             this.btnSQRT.TabIndex = 19;
-            this.btnSQRT.Text = "√x";
+            this.btnSQRT.Text = "√𝑥";
             this.btnSQRT.UseVisualStyleBackColor = false;
             this.btnSQRT.Click += new System.EventHandler(this.btnSQRT_Click);
             // 
@@ -308,7 +308,7 @@ namespace Calculator_Final
             this.btnDivision.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnDivision.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnDivision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDivision.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDivision.Font = new System.Drawing.Font("Segoe UI Light", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDivision.Location = new System.Drawing.Point(297, 295);
             this.btnDivision.Name = "btnDivision";
             this.btnDivision.Size = new System.Drawing.Size(94, 64);
@@ -322,12 +322,12 @@ namespace Calculator_Final
             this.btnSquare.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnSquare.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btnSquare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSquare.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSquare.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSquare.Location = new System.Drawing.Point(103, 295);
             this.btnSquare.Name = "btnSquare";
             this.btnSquare.Size = new System.Drawing.Size(94, 64);
             this.btnSquare.TabIndex = 17;
-            this.btnSquare.Text = "x^2";
+            this.btnSquare.Text = "𝑥²";
             this.btnSquare.UseVisualStyleBackColor = false;
             this.btnSquare.Click += new System.EventHandler(this.btnSquare_Click);
             // 
@@ -336,12 +336,12 @@ namespace Calculator_Final
             this.btn1overX.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btn1overX.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.btn1overX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn1overX.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn1overX.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn1overX.Location = new System.Drawing.Point(6, 295);
             this.btn1overX.Name = "btn1overX";
             this.btn1overX.Size = new System.Drawing.Size(94, 64);
             this.btn1overX.TabIndex = 16;
-            this.btn1overX.Text = "1/x";
+            this.btn1overX.Text = "¹⁄𝑥";
             this.btn1overX.UseVisualStyleBackColor = false;
             this.btn1overX.Click += new System.EventHandler(this.btn1overX_Click);
             // 
@@ -412,7 +412,6 @@ namespace Calculator_Final
             this.txtDisp1.TabIndex = 24;
             this.txtDisp1.Text = "0";
             this.txtDisp1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtDisp1.WordWrap = false;
             // 
             // txtDisp2
             // 

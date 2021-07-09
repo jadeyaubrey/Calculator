@@ -16,6 +16,7 @@ namespace Calculator_Final
         Boolean equals = false;
         Boolean memory_on = false;
         Boolean percent = false;
+        int op_counter = 0;
         string num1 = ""; // display
         string num2 = "";
         string operation_sign = "";
@@ -335,7 +336,8 @@ namespace Calculator_Final
             txtDisp2.Clear();
             operation_sign = "-";
             num1 = txtDisp1.Text;
-            txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "-";
+            txtDisp2.Text = txtDisp1.Text + "−";
+   
         }
 
         private void btnMultiply_Click(object sender, EventArgs e)
@@ -344,7 +346,7 @@ namespace Calculator_Final
             txtDisp2.Clear();
             operation_sign = "*";
             num1 = txtDisp1.Text;
-            txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "*";
+            txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "×";
         }
 
         private void btnDivision_Click(object sender, EventArgs e)
@@ -353,7 +355,7 @@ namespace Calculator_Final
             txtDisp2.Clear();
             operation_sign = "/";
             num1 = txtDisp1.Text;
-            txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "/";
+            txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "÷";
         }
         //-------- E N D  O F  B A S I C  A R I T H M E T I C S
         private void btnEquals_Click(object sender, EventArgs e)
@@ -363,6 +365,15 @@ namespace Calculator_Final
                 if (percent)
                 {
                     txtDisp1.Text = (float.Parse(num1) + float.Parse(txtDisp1.Text)).ToString();
+                }
+                else if ((equals) && (txtDisp2.Text.Contains("+")))
+                {
+                    string[] nums = txtDisp2.Text.Split('+', '=');
+                    btnAdd.PerformClick();
+                   
+                    txtDisp1.Text = (float.Parse(num1) + float.Parse(nums[1])).ToString();
+                    txtDisp2.Text = txtDisp1.Text + "+" + nums[1] + "=";
+                    
                 }
                 else
                 {
@@ -430,11 +441,15 @@ namespace Calculator_Final
         //---------- A D D I T I O N A L  O P E R A T I O N S
         private void btnDel_Click(object sender, EventArgs e)
         {
-            if (txtDisp1.Text.Length > 0)
+            if ((txtDisp1.Text.Length > 1) && (!equals))
             {
                 txtDisp1.Text = txtDisp1.Text.Remove(txtDisp1.Text.Length - 1, 1);
             }
-            else if ((txtDisp1.Text.Length == 0) || txtDisp1.Text == "0")
+            else if (equals)
+            {
+                txtDisp2.Clear();
+            }
+            else if ((txtDisp1.Text.Length == 1) || txtDisp1.Text == "0")
             {
                 txtDisp1.Text = "0";
             }
@@ -561,6 +576,8 @@ namespace Calculator_Final
         {
             txtDisp1.Text = (-1 * float.Parse(txtDisp1.Text)).ToString();
         }
+
+
 
     }
 }
