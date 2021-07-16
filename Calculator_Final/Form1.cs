@@ -323,15 +323,32 @@ namespace Calculator_Final
         //  ------- B A S I C    A R I T H M E T I C S 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if ((txtDisp2.Text != "") && (!operation))
+
+            if ((txtDisp2.Text != "")) //&& (!operation))
             {
-                //txtDisp1.Text = num2;
-                //operation_sign = "+";
-                //txtDisp1.Text = (float.Parse(num1) + float.Parse(txtDisp1.Text)).ToString();
-                //txtDisp2.Text = txtDisp1.Text + operation_sign;
-                txtDisp1.Text = (float.Parse(num1) + char.Parse(operation_sign) + float.Parse(txtDisp1.Text)).ToString();
-                txtDisp2.Text = txtDisp1.Text + operation_sign;
                 operation = true;
+                operation_sign = "+";
+
+                if (txtDisp2.Text.Contains("+"))
+                {
+                    txtDisp1.Text = (float.Parse(num1) + float.Parse(txtDisp1.Text)).ToString();
+                    txtDisp2.Text = txtDisp1.Text + operation_sign;
+                }
+                else if (txtDisp2.Text.Contains("-"))
+                {
+                    txtDisp1.Text = (float.Parse(num1) - float.Parse(txtDisp1.Text)).ToString();
+                    txtDisp2.Text = txtDisp1.Text + operation_sign;
+                }
+                else if (txtDisp2.Text.Contains("×"))
+                {
+                    txtDisp1.Text = (float.Parse(num1) * float.Parse(txtDisp1.Text)).ToString();
+                    txtDisp2.Text = txtDisp1.Text + operation_sign;
+                }
+                else if (txtDisp2.Text.Contains("÷"))
+                {
+                    txtDisp1.Text = (float.Parse(num1) / float.Parse(txtDisp1.Text)).ToString();
+                    txtDisp2.Text = txtDisp1.Text + operation_sign;
+                }
             }
             else if (operation)
             {
