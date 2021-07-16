@@ -329,7 +329,18 @@ namespace Calculator_Final
                 //operation_sign = "+";
                 //txtDisp1.Text = (float.Parse(num1) + float.Parse(txtDisp1.Text)).ToString();
                 //txtDisp2.Text = txtDisp1.Text + operation_sign;
-                txtDisp1.Text = (float.Parse(num1) + float.Parse(txtDisp1.Text)).ToString();
+                txtDisp1.Text = (float.Parse(num1) + char.Parse(operation_sign) + float.Parse(txtDisp1.Text)).ToString();
+                txtDisp2.Text = txtDisp1.Text + operation_sign;
+                operation = true;
+            }
+            else if (operation)
+            {
+                operation = true;
+                txtDisp2.Clear();
+                operation_sign = "+";
+                num1 = txtDisp1.Text;
+                txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "+";
+                //btnAdd.PerformClick();
             }
             else
             {
@@ -338,7 +349,6 @@ namespace Calculator_Final
                 operation_sign = "+";
                 num1 = txtDisp1.Text;
                 txtDisp2.Text = txtDisp2.Text + txtDisp1.Text + "+";
-                //btnAdd.PerformClick();
             }
         }
 
